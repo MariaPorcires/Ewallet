@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     element: <Home />
   },
   {
-    path: "addCart",
+    path: "/addCard",
     element: <AddCard />
   }
 ])
