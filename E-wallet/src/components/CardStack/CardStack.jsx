@@ -12,6 +12,7 @@ function CardStack() {
 
     return(
         <section>
+            
             { newCard }
         </section>
         
