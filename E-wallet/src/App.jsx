@@ -1,6 +1,6 @@
 import './App.scss'
 import Home from './views/Home'
-import AddCart from './views/AddCart'
+import AddCard from './views/AddCard'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom' 
 
 const router = createBrowserRouter([
@@ -10,7 +10,7 @@ const router = createBrowserRouter([
   },
   {
     path: "addCart",
-    element: <AddCart />
+    element: <AddCard />
   }
 ])
 

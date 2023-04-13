@@ -1,10 +1,11 @@
 //import './AddCart.scss'
 import CardForm from "../components/CardForm/CardForm"
+import './AddCard.scss'
 
 function AddCart() {
 
     return(
-        <section>
+        <section className="add-card">
             <CardForm />
         </section>
     )

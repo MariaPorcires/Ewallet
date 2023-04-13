@@ -25,7 +25,7 @@ function CardForm() {
 
     
     return(
-        <section>
+        <section className='form'>
             <label htmlFor='cardnumber'>Card Number</label>
             <input type='text' id='cardnumber' name='cardnumber' onChange={ (event) => { setNr(event.target.value)} } required />
             <label htmlFor='cardname'>Cardholder Name</label>
