@@ -1,5 +1,7 @@
 import './CardForm.scss'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+
 
 function CardForm() {
     const [nr, setNr] = useState();
@@ -8,9 +10,12 @@ function CardForm() {
     const [ccv, setCcv] = useState();
     const [vendor, setVendor] = useState();
 
+    const navigate = useNavigate();
+
     function handleClick() {
-        const showForm = {nr, name, date, ccv, vendor}
-        console.log(showForm);
+        const showCard = {nr, name, date, ccv, vendor};
+        console.log(showCard);
+        navigate('/')
 
     }
 
