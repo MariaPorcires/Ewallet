@@ -10,12 +10,12 @@ function CardForm() {
     const [ccv, setCcv] = useState();
     const [vendor, setVendor] = useState();
 
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
 
     function handleClick() {
         const showCard = {nr, name, date, ccv, vendor};
         console.log(showCard);
-        navigate('/')
+        //navigate('/')
 
     }
 
