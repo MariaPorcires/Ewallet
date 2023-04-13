@@ -38,10 +38,10 @@ function CardForm() {
             <label htmlFor='vendor'>Vendor</label>
                 <select name='vendor' id='vendor' onChange={ (event) => { setVendor(event.target.value)} }>
                 <option value=''></option>
-                    <option value='bitcoin'>BITCOIN INC</option>
-                    <option value='ninja'>NINJA BANK</option>
-                    <option value='block'>BLOCK CHAIN INC</option>
-                    <option value='evil'>EVIL CORP</option>
+                    <option value='Bitcoin Inc'>BITCOIN INC</option>
+                    <option value='Ninja Bank'>NINJA BANK</option>
+                    <option value='Block Chain Inc'>BLOCK CHAIN INC</option>
+                    <option value='Evil Corp'>EVIL CORP</option>
                 </select>
 
                 <button onClick={ handleClick }>ADD CARD</button>

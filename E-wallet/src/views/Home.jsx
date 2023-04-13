@@ -8,7 +8,13 @@ function Home() {
     const newCard = card.map(function (item) {
         console.log(item);
         return (
-            <>{item.nr}</>
+            <section>
+                <p>{item.nr}</p>
+                <p>{item.name}</p>
+                <p>{item.date}</p>
+                <p>{item.ccv}</p>
+                <p>{item.vendor}</p>
+            </section>
         )
     })
     
