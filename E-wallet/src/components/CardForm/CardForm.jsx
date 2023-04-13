@@ -1,6 +1,8 @@
 import './CardForm.scss'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addCardAction } from '../../actions/addCardAction';
 
 
 function CardForm() {
@@ -11,10 +13,12 @@ function CardForm() {
     const [vendor, setVendor] = useState();
 
     //const navigate = useNavigate();
+    const dispatch = useDispatch();
 
     function handleClick() {
         const showCard = {nr, name, date, ccv, vendor};
         console.log(showCard);
+        dispatch(addCardAction(showCard))
         //navigate('/')
 
     }

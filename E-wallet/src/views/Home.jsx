@@ -4,7 +4,7 @@ function Home() {
     return(
         <section>
         <Header />
-        jjjj
+        
         </section>
         
     )
