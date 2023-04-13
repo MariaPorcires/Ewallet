@@ -2,7 +2,7 @@
 import CardForm from "../components/CardForm/CardForm"
 import './AddCard.scss'
 
-function AddCart() {
+function AddCard() {
 
     return(
         <section className="add-card">
@@ -11,4 +11,4 @@ function AddCart() {
     )
 }
 
-export default AddCart
+export default AddCard
