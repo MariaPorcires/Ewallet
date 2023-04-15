@@ -47,12 +47,12 @@ function CardForm() {
             <label className="form__label" htmlFor='cardnumber'>CARD NUMBER</label>
             <input className='form__input' type='text' id='cardnumber' name='cardnumber' onChange={ (event) => { setNr(event.target.value)} } required />
             <label className="form__label" htmlFor='cardname'>CARDHOLDER NAME</label>
-            <input className='form__input' type='text' id='cardname' name='cardname' onChange={ (event) => { setName(event.target.value)} } required />
+            <input className='form__input' type='text' id='cardname' name='cardname' placeholder="FIRSTNAME LASTNAME" onChange={ (event) => { setName(event.target.value)} } required />
             
             <section className='form__section'>
                 <section className='form__small'>
                     <label className="form__label" htmlFor='date'>VALID TRHU</label>
-                    <input className='form__input' type='text' id='date' name='date' onChange={ (event) => { setDate(event.target.value)} } required />
+                    <input className='form__input' type='text' id='date' name='date' placeholder="MM/YY" onChange={ (event) => { setDate(event.target.value)} } required />
                 </section>
                 <section className='form__small'>
                     <label className="form__label" htmlFor='ccv'>CCV</label>
