@@ -1,0 +1,23 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    &__cardStack {
+        margin-top: 1rem;
+    }
+
+    &__button {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        width: 100%;
+        padding: 1rem;
+        height: 4rem;
+        margin-top: 2rem;
+        border-radius: 8px;
+        width: 300px;
+    }
+}

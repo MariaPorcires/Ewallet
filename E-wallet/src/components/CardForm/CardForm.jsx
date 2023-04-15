@@ -7,7 +7,7 @@ import { addCardAction } from '../../actions/addCardAction';
 import chipLight from '../../assets/assets/chip-light.svg';
 import bitcoin from '../../assets/assets/vendor-bitcoin.svg';
 import ninja from '../../assets/assets/vendor-ninja.svg';
-import blockhain from '../../assets/assets/vendor-blockchain.svg';
+import blockchain from '../../assets/assets/vendor-blockchain.svg';
 import evil from '../../assets/assets/vendor-evil.svg'
 
 
@@ -65,7 +65,7 @@ function CardForm() {
                 <option value=''></option>
                     <option value={`bitcoin ${bitcoin} #FFAE34 #FFFFFF ${chipLight}`}>BITCOIN INC</option>
                     <option value={`ninja ${ninja} #222222 #FFFFFF ${chipLight}`}>NINJA BANK</option>
-                    <option value={`blockchain ${blockhain} #8B58F9 #FFFFFF ${chipLight}`}>BLOCK CHAIN INC</option>
+                    <option value={`blockchain ${blockchain} #8B58F9 #FFFFFF ${chipLight}`}>BLOCK CHAIN INC</option>
                     <option value={`evil ${evil} #F33355 #FFFFFF ${chipLight}`}>EVIL CORP</option>
                 </select>
 

@@ -10,11 +10,13 @@ function Home() {
     
 
     return(
-        <section>
+        <section className="home">
         <Header />
             
-            <CardStack />
-        
+            <section className="home__cardStack">
+                <CardStack />
+                <button className="home__button">ADD A NEW CARD</button>
+            </section>
         </section>
         
     )
