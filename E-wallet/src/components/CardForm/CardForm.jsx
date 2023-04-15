@@ -1,8 +1,16 @@
 import './CardForm.scss'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addCardAction } from '../../actions/addCardAction';
+import chipLight from '../../assets/assets/chip-light.svg'
+import bitcoin from '../assets/assets/vendor-bitcoin.svg'
+import ninja from '../../assets/assets/vendor-ninja.svg'
+import blockhain from '../../assets/assets/vendor-blockchain.svg'
+import evil from '../../assets/assets/vendor-evil.svg'
+
+
+
 
 
 function CardForm() {
@@ -38,10 +46,10 @@ function CardForm() {
             <label htmlFor='vendor'>Vendor</label>
                 <select name='vendor' id='vendor' onChange={ (event) => { setVendor(event.target.value)} }>
                 <option value=''></option>
-                    <option value='Bitcoin Inc #t4et4ete'>BITCOIN INC</option>
-                    <option value='Ninja Bank'>NINJA BANK</option>
-                    <option value='Block Chain Inc'>BLOCK CHAIN INC</option>
-                    <option value='Evil Corp'>EVIL CORP</option>
+                    <option value={`bitcoin ${bitcoin} #FFAE34 #FFFFFF ${chipLight}`}>BITCOIN INC</option>
+                    <option value={`ninja ${ninja} #222222 #FFFFFF ${chipLight}`}>NINJA BANK</option>
+                    <option value={`blockchain ${blockhain} #8B58F9 #FFFFFF ${chipLight}`}>BLOCK CHAIN INC</option>
+                    <option value={`evil ${evil} #F33355 #FFFFFF ${chipLight}`}>EVIL CORP</option>
                 </select>
 
                 <button onClick={ handleClick }>ADD CARD</button>

@@ -2,7 +2,7 @@ import './Card.scss'
 
 function Card(props) {
     return(
-        <section className='card'>
+        <section className='card' >
             <h2>{ props.nr }</h2>
             <p>{ props.name }</p>
             <p>{ props.date }</p>
