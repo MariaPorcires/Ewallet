@@ -4,13 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addCardAction } from '../../actions/addCardAction';
 import chipLight from '../../assets/assets/chip-light.svg'
-import bitcoin from '../assets/assets/vendor-bitcoin.svg'
+import bitcoin from '../../assets/assets/vendor-bitcoin.svg'
 import ninja from '../../assets/assets/vendor-ninja.svg'
 import blockhain from '../../assets/assets/vendor-blockchain.svg'
 import evil from '../../assets/assets/vendor-evil.svg'
-
-
-
 
 
 function CardForm() {
@@ -20,12 +17,14 @@ function CardForm() {
     const [ccv, setCcv] = useState();
     const [vendor, setVendor] = useState();
 
-
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
     function handleClick() {
-        const showCard = {nr, name, date, ccv, vendor};
+
+        const vendorSplit = vendor.split(' ')
+
+        const showCard = {nr, name, date, ccv, vendorSplit};
         console.log(showCard);
         dispatch(addCardAction(showCard))
         navigate('/')
