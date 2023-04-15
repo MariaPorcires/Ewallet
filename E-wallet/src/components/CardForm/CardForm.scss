@@ -7,6 +7,21 @@
         height: 3rem;
     }
 
+    &__section {
+        display: flex;
+        width: 100%;
+    }
+
+    &__small {
+        flex-direction: column;
+
+    }
+
+    &__label {
+        margin-top: 1rem;
+
+    }
+
     &__button {
         background-color: black;
         color: white;

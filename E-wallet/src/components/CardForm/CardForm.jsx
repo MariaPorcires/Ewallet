@@ -44,19 +44,23 @@ function CardForm() {
     
     return(
         <section className='form'>
-            <label htmlFor='cardnumber'>Card Number</label>
+            <label className="form__label" htmlFor='cardnumber'>Card Number</label>
             <input className='form__input' type='text' id='cardnumber' name='cardnumber' onChange={ (event) => { setNr(event.target.value)} } required />
-            <label htmlFor='cardname'>Cardholder Name</label>
+            <label className="form__label" htmlFor='cardname'>Cardholder Name</label>
             <input className='form__input' type='text' id='cardname' name='cardname' onChange={ (event) => { setName(event.target.value)} } required />
             
-            <article className='form__small'>
-                <label htmlFor='date'>Valid thru</label>
-                <input type='text' id='date' name='date' onChange={ (event) => { setDate(event.target.value)} } required />
-                <label htmlFor='ccv'>CCV</label>
-                <input type='text' id='ccv' name='ccv' onChange={ (event) => { setCcv(event.target.value)} } required />
-            </article>
+            <section className='form__section'>
+                <section className='form__small'>
+                    <label className="form__label" htmlFor='date'>Valid thru</label>
+                    <input type='text' id='date' name='date' onChange={ (event) => { setDate(event.target.value)} } required />
+                </section>
+                <section className='form__small'>
+                    <label className="form__label" htmlFor='ccv'>CCV</label>
+                    <input type='text' id='ccv' name='ccv' onChange={ (event) => { setCcv(event.target.value)} } required />
+            </section>
+            </section>
             
-            <label htmlFor='vendor'>Vendor</label>
+            <label className="form__label" htmlFor='vendor'>Vendor</label>
                 <select name='vendor' id="" onChange={ (event) => { setVendor(event.target.value)} }>
                 <option value=''></option>
                     <option value={`bitcoin ${bitcoin} #FFAE34 #FFFFFF ${chipLight}`}>BITCOIN INC</option>
