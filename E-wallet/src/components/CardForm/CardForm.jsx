@@ -44,24 +44,24 @@ function CardForm() {
     
     return(
         <section className='form'>
-            <label className="form__label" htmlFor='cardnumber'>Card Number</label>
+            <label className="form__label" htmlFor='cardnumber'>CARD NUMBER</label>
             <input className='form__input' type='text' id='cardnumber' name='cardnumber' onChange={ (event) => { setNr(event.target.value)} } required />
-            <label className="form__label" htmlFor='cardname'>Cardholder Name</label>
+            <label className="form__label" htmlFor='cardname'>CARDHOLDER NAME</label>
             <input className='form__input' type='text' id='cardname' name='cardname' onChange={ (event) => { setName(event.target.value)} } required />
             
             <section className='form__section'>
                 <section className='form__small'>
-                    <label className="form__label" htmlFor='date'>Valid thru</label>
-                    <input type='text' id='date' name='date' onChange={ (event) => { setDate(event.target.value)} } required />
+                    <label className="form__label" htmlFor='date'>VALID TRHU</label>
+                    <input className='form__input' type='text' id='date' name='date' onChange={ (event) => { setDate(event.target.value)} } required />
                 </section>
                 <section className='form__small'>
                     <label className="form__label" htmlFor='ccv'>CCV</label>
-                    <input type='text' id='ccv' name='ccv' onChange={ (event) => { setCcv(event.target.value)} } required />
+                    <input className='form__input' type='text' id='ccv' name='ccv' onChange={ (event) => { setCcv(event.target.value)} } required />
             </section>
             </section>
             
-            <label className="form__label" htmlFor='vendor'>Vendor</label>
-                <select name='vendor' id="" onChange={ (event) => { setVendor(event.target.value)} }>
+            <label className="form__label" htmlFor='vendor'>VENDOR</label>
+                <select className='form__input' name='vendor' id="" onChange={ (event) => { setVendor(event.target.value)} }>
                 <option value=''></option>
                     <option value={`bitcoin ${bitcoin} #FFAE34 #FFFFFF ${chipLight}`}>BITCOIN INC</option>
                     <option value={`ninja ${ninja} #222222 #FFFFFF ${chipLight}`}>NINJA BANK</option>
