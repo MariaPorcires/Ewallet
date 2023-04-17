@@ -17,7 +17,7 @@ function Home() {
 
     return(
         <section className="home">
-        <Header />
+        <Header title={ 'E-WALLET' } />
             
             <section className="home__cardStack">
                 <CardStack />

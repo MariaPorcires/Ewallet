@@ -1,8 +1,10 @@
 import './Header.scss'
 
-function Header() {
+function Header({ title }) {
     return(
-        <section></section>
+        <section className='header'>
+            <h1 className='header__title'>{ title }</h1>
+        </section>
     )
 }
 
