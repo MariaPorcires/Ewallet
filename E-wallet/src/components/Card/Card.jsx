@@ -1,10 +1,15 @@
 import './Card.scss'
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { activeCard } from '../../actions/cardAction';
 
 
 function Card(props) {
+    const dispatch = useDispatch()
+    
 
     function handleClick() {
-        console.log('klick');
+        dispatch(activeCard(props))
     }
 
     return(
@@ -17,9 +22,10 @@ function Card(props) {
                 <h2 className='card__nr' style={{color: `${props.vendor[3] }` }}>{ props.nr }</h2>
                 <p className='card__name'>CARDHOLDER NAME</p>
                 <p className='card__font' style={{color: `${props.vendor[3] }` }}>{ props.name }</p>
+                <img className='card__logo' src={ props.vendor[1] } />
                 <p className='card__date'>VALID THRU</p>
                 <p style={{color: `${props.vendor[3] }` }}>{ props.date }</p>
-                <img className='card__logo' src={ props.vendor[1] } />
+
             </section>
         </section>    
            

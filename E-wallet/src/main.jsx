@@ -4,10 +4,10 @@ import App from './App'
 import './index.scss'
 import { legacy_createStore } from 'redux'
 import { Provider } from 'react-redux'
-import addCardReducer from './reducers/addCardReducer'
+import cardReducer from './reducers/cardReducer'
 
 const store = legacy_createStore(
-  addCardReducer,
+  cardReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() 
 )
 

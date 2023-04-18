@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useId } from 'react';
-import { addCardAction } from '../../actions/addCardAction';
+import { cardAction } from '../../actions/cardAction';
 import chipLight from '../../assets/assets/chip-light.svg';
 import bitcoin from '../../assets/assets/vendor-bitcoin.svg';
 import ninja from '../../assets/assets/vendor-ninja.svg';
@@ -36,7 +36,7 @@ function CardForm() {
         };
 
         console.log(showCard);
-        dispatch(addCardAction(showCard))
+        dispatch(cardAction(showCard))
         navigate('/')
 
     }
