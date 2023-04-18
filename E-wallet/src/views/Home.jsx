@@ -18,7 +18,7 @@ function Home() {
     return(
         <section className="home">
         <Header title={ 'E-WALLET' } />
-            
+            <p className="add-card__type">ACTIVE CARD</p>
             <section className="home__cardStack">
                 <CardStack />
                 <button className="home__button" onClick={ handleClick }>ADD A NEW CARD</button>

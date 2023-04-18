@@ -11,7 +11,7 @@ function Card(props) {
             <h2>{ props.nr }</h2>
             <p>{ props.name }</p>
             <p>{ props.date }</p>
-            <img src={ props.vendor } />
+            <img src={ props.vendor[1] } />
           
 
            
