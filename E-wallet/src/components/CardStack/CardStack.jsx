@@ -11,7 +11,7 @@ function CardStack() {
     
 
     return(
-        <section>
+        <section className="cardStack">
             
             { newCard }
         </section>
