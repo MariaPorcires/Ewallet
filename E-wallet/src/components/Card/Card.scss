@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     font-family: 'PT Mono', monospace;
+    
 
     &__name {
         color: white;
@@ -20,7 +21,7 @@
         padding: 1rem;
         position: relative;
         z-index: 1;
-        margin: -7.6rem;
+        margin: -7.5rem;
 
     }
     
@@ -28,11 +29,11 @@
     &__img {
         display: flex;
         flex-direction: column;
-        width: 400px;
-        height: 245px;
+        width: 375px;
+        height: 240px;
         border-radius: 0.7rem;
         box-shadow: 0px 0px 10px ;
-        margin-left: 3.8rem;
+        margin-left: 4.2rem;
     }
 
     &__chip {
