@@ -4,8 +4,6 @@
     justify-content: center;
     align-items: center;
     
-    
-    
     &__img {
         display: flex;
         flex-direction: column;
@@ -14,14 +12,10 @@
         border-radius: 0.7rem;
         box-shadow: 0px 0px 10px ;
         margin-top: 1rem;
-        
     }
 
     &__cardStack {
-        
         margin-top: 10rem;
-    
-        
     }
 
     &__button {

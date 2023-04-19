@@ -17,7 +17,6 @@ function Home() {
         navigate("/AddCard")
     }
     
-    
 
     return(
         <section className="home">
