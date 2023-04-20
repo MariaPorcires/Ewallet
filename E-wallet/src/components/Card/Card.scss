@@ -10,11 +10,20 @@
     
 
     &__name {
-       
+       font-size: 12px;
+       line-height: 13px;
+       margin: 1rem;
+       margin-top: 1.5rem;
+       font-weight: 400;
     }
     
     &__date {
         margin-left: auto;
+        font-size: 12px;
+        line-height: 13px;
+        margin-top: -2.6rem;
+        margin-right: 1rem;
+        font-weight: 400;
     }
 
     &__section {

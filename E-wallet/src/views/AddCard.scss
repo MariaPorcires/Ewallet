@@ -36,11 +36,34 @@
         width: 50px;
     }
 
+    &__logo {
+        margin-left: auto;
+        padding: 1.3rem;
+        margin-top: -7rem;
+    }
+
     &__x {
         font-size: 28px;
         letter-spacing: 0.03em;
         font-weight: 400;
         line-height: 2rem;
         text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    &__fname {
+        font-size: 18px;
+        line-height: 20px;
+        margin-left: 1rem;
+        margin-top: -0.5rem;
+    }
+
+    &__mmyy {
+        margin-left: auto;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 0.3rem;
+        margin-right: 1rem;
+        font-weight: 400;
     }
 }

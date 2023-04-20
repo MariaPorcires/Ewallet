@@ -36,7 +36,7 @@ function Home() {
 
                : <article className="add-card__img">
                <img className='add-card__chip' src='./src/assets/assets/chip-dark.svg' />
-               <h2 className="add-card__x">XXXX XXXX XXXX XXXX</h2>
+               <h2 className="add-card__x">NO ACTIVE CARD</h2>
 
            </article> }
 
