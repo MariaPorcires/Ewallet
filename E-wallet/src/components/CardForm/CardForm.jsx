@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useId } from 'react';
 import { cardAction } from '../../actions/cardAction';
+import chipDark from '../../assets/assets/chip-dark.svg';
 import chipLight from '../../assets/assets/chip-light.svg';
 import bitcoin from '../../assets/assets/vendor-bitcoin.svg';
 import ninja from '../../assets/assets/vendor-ninja.svg';
@@ -64,7 +65,7 @@ function CardForm() {
             <label className="form__label" htmlFor='vendor'>VENDOR</label>
                 <select className='form__input' name='vendor' id="" onChange={ (event) => { setVendor(event.target.value)} }>
                 <option value=''></option>
-                    <option value={`bitcoin ${ bitcoin } #FFAE34 #FFFFFF ${chipLight}`}>BITCOIN INC</option>
+                    <option value={`bitcoin ${ bitcoin } #FFAE34 #FFFFFF ${chipDark}`}>BITCOIN INC</option>
                     <option value={`ninja ${ninja} #222222 #FFFFFF ${chipLight}`}>NINJA BANK</option>
                     <option value={`blockchain ${blockchain} #8B58F9 #FFFFFF ${chipLight}`}>BLOCK CHAIN INC</option>
                     <option value={`evil ${evil} #F33355 #FFFFFF ${chipLight}`}>EVIL CORP</option>
