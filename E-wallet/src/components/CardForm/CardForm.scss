@@ -14,11 +14,18 @@
         display: flex;
         width: 100%;
         margin-top: 1rem;
+        
     }
 
     &__small {
+        width: 50%;
         flex-direction: column;
+        margin-right: 0.5rem;
+    }
 
+    &__smallTwo {
+        width: 50%;
+        margin-left: 0.5rem;
     }
 
     &__label {

@@ -54,7 +54,8 @@ function CardForm() {
                     <label className="form__label" htmlFor='date'>VALID TRHU</label>
                     <input className='form__input' type='text' id='date' name='date' placeholder="MM/YY" onChange={ (event) => { setDate(event.target.value)} } required />
                 </section>
-                <section className='form__small'>
+                <section className='form__smallTwo'>
+                    
                     <label className="form__label" htmlFor='ccv'>CCV</label>
                     <input className='form__input' type='text' id='ccv' name='ccv' onChange={ (event) => { setCcv(event.target.value)} } required />
             </section>
