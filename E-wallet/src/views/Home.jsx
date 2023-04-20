@@ -21,7 +21,7 @@ function Home() {
     return(
         <section className="home">
             <Header title={ 'E-WALLET' } />
-                <p className="add-card__type">ACTIVE CARD</p>
+                <p className="home__type">ACTIVE CARD</p>
                 
 
                 <section className='home__img' style={{...activeCard?.vendor ? {background: `${activeCard.vendor[2] }`} : '' }}>
@@ -36,9 +36,9 @@ function Home() {
 
                 
             <section className="home__cardStack">
-                <CardStack />
+                <CardStack /></section>
                 <button className="home__button" onClick={ handleClick }>ADD A NEW CARD</button>
-            </section>
+            
         </section>
         
     )
