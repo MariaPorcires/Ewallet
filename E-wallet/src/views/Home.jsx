@@ -26,17 +26,17 @@ function Home() {
                 { activeCard?.nr ?
                 <section className='home__img' style={{...activeCard?.vendor ? {background: `${activeCard.vendor[2] }`} : '' }}>
                     <img className='home__chip' src={ activeCard?.vendor ? activeCard.vendor[4] : '' } />
-                    <h2 className='card__nr' style={{ ...activeCard?.vendor ? {color: `${activeCard.vendor[3] }` } : '' }}>{ activeCard?.vendor ? activeCard.nr : '' }</h2>
-                    <p className='card__name'>CARDHOLDER NAME</p>
-                    <p className='card__font' style={{...activeCard?.vendor ? {color: `${activeCard.vendor[3] }` } : '' }}>{ activeCard?.vendor ? activeCard.name : '' }</p>
-                    <img className='card__logo' src={ activeCard?.vendor? activeCard.vendor[1] : '' } />
-                    <p className='card__date'>VALID THRU</p>
-                    <p style={{...activeCard?.vendor ? {color: `${activeCard.vendor[3] }` } : '' }}>{ activeCard?.vendor ? activeCard.date : '' }</p>
+                    <h2 className='home__nr' style={{ ...activeCard?.vendor ? {color: `${activeCard.vendor[3] }` } : '' }}>{ activeCard?.vendor ? activeCard.nr : '' }</h2>
+                    <p className='home__name'>CARDHOLDER NAME</p>
+                    <p className='home__fname' style={{...activeCard?.vendor ? {color: `${activeCard.vendor[3] }` } : '' }}>{ activeCard?.vendor ? activeCard.name : '' }</p>
+                    <img className='home__logo' src={ activeCard?.vendor? activeCard.vendor[1] : '' } />
+                    <p className='home__date'>VALID THRU</p>
+                    <p className='home__valid' style={{...activeCard?.vendor ? {color: `${activeCard.vendor[3] }` } : '' }}>{ activeCard?.vendor ? activeCard.date : '' }</p>
                 </section>
 
                : <article className="add-card__img">
-               <img className='add-card__chip' src='./src/assets/assets/chip-dark.svg' />
-               <h2 className="add-card__x">NO ACTIVE CARD</h2>
+               
+               <h2 className="home__noCard">NO ACTIVE CARD</h2>
 
            </article> }
 

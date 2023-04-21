@@ -22,10 +22,10 @@ function Card(props) {
                 
                 <h2 className='card__nr' style={{color: `${props.vendor[3] }` }}>{ props.nr }</h2>
                 <p className='card__name'>CARDHOLDER NAME</p>
-                <p className='card__font' style={{color: `${props.vendor[3] }` }}>{ props.name }</p>
+                <p className='card__fname' style={{color: `${props.vendor[3] }` }}>{ props.name }</p>
                 
                 <p className='card__date'>VALID THRU</p>
-                <p style={{color: `${props.vendor[3] }` }}>{ props.date }</p>
+                <p className='card__valid' style={{color: `${props.vendor[3] }` }}>{ props.date }</p>
 
             </section>
         </section>    

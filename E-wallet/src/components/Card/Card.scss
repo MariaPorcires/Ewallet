@@ -8,7 +8,6 @@
     color: white;
     
     
-
     &__name {
        font-size: 12px;
        line-height: 13px;
@@ -31,18 +30,17 @@
         padding: 1rem;
         position: relative;
         z-index: 1;
-        margin: -7.3em;
+        margin: -7em;
     }
     
 
     &__img {
         display: flex;
         flex-direction: column;
-        width: 375px;
-        height: 235px;
+        width: 350px;
+        height: 225px;
         border-radius: 0.7rem;
         box-shadow: 0px 0px 10px ;
-        
     }
 
     &__chip {
@@ -52,19 +50,30 @@
     }
 
     &__nr {
-        font-size: 29px;
+        font-size: 27px;
         letter-spacing: 0.03em;
         font-weight: 400;
         line-height: 2rem;
         text-align: center;
     }
 
-    &__color {
+    &__valid {
+        margin-left: auto;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 0.4rem;
+        margin-right: 1rem;
+        font-weight: 400;
 
     }
 
-    &__font {
+    &__fname {
         color: white;
+        font-size: 18px;
+        line-height: 20px;
+        margin-left: 1rem;
+        margin-top: -0.7rem;
+        text-transform: uppercase;
 
     }
 
